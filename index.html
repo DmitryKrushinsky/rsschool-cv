@@ -4,9 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>rsschool-cv</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="main-content">
+            <aside class="aside container ">
+                <div class="avatar-img">
+                    <img class="avatar-image" src="/images/avatar.jpg" alt="avatar-img">
+                </div>
+                <section class="aside__section contacts">                    
+                    <h3>Contacts</h3>
+                    <ul>
+                        <li><a href="tel:+375333462069"><img class="contact-icon" src="/images/phone.svg" alt="phone">+375(33)346-20-69</a></li>
+                        <li><a href="mailto:dima.mysteri.98@gmail.com"><img class="contact-icon" src="/images/email.svg" alt="email"> dima.mysteri.98@gmail.com</a></li>
+                        <li><a href="https://t.me/dmitrykrush"><img class="contact-icon" src="/images/telegram.svg" alt="telegram"> @dmitrykrush</a></li>
+                    </ul>                    
+                </section>
+                <section class="aside__section skills">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li><b>Markup: </b>HTML5, Markdown</li>
+                        <li><b>Styles: </b>CSS3, SCSS, SASS</li>
+                        <li><b>Version control: </b>Git</li>
+                        <li><b>Languages: </b>JavaScript, Python</li>
+                        <li><b>Frameworks & Libraries: </b>Django</li>
+                        <li><b>Software: </b>Figma</li>
+                    </ul>
+                </section>
+            </aside>
+            <main class="main">
+                <div class="main-wrapper">
+                    <header class="name">
+                        <h1>Dmitry Krushunsky</h1>
+                        <h2>FRONT-END DEVELOPER</h2>
+                    </header>
+                    <section class="about">
+                        <h3>About me</h3>
+                        <p>
+                            Hello. My name is Dmitry, I am 23 years old, currently I work as a network engineer in an ISP. I've always been
+                            interested in web development, thats why I'm here. My dream is to become a full-stack web developer using a bundle
+                            Python/Django and JavaScript/Angular.
+                        </p>
+                    </section>
+                    <section class="education">
+                        <h3>Education</h3>
+                        <p class="education__paragraph">
+                            <span>Minsk, Belarusian State University of Informatics and Radioelectronics</span>
+                            <span>Faculty of Computer Aided Design</span>
+                            <span>Specialty: Electronics-Engineer-Programmer</span>
+                        </p>
+                    </section>
+                    <section class="english">
+                        <h3>English</h3>
+                        <p>Estimated level: B1+</p>
+                    </section>
+                    <section class="code">
+                        <h3>Code examples</h3>
+                        <h4>Python</h4>
+                       <pre>
+def anagrams(word, words):
+    res = []
+    word = ''.join(sorted(list(word)))
+    for i in words:
+        wordb = ''.join(sorted(list(i)))
+        if wordb == word:
+            res.append(i)
+return res
+                        </pre>
+                        <pre>
+def anagrams(word, words):
+    res = []
+    word = ''.join(sorted(list(word)))
+    for i in words:
+        wordb = ''.join(sorted(list(i)))
+        if wordb == word:
+            res.append(i)
+return res
+                        </pre>
+                        <h4>JavaScript</h4>
+                        <pre>
+function even_or_odd(number) {
+    let result = number % 2 == 0 ? "Even" : "Odd";
+    return result;
+}
+                        </pre>
+                    </section>
+                </div>
+            </main>
+        </div>                
+       <footer class="footer">
+           <div class="footer-item"><a href="https://rs.school/js/"><img src="/images/rs_school_js.svg" width="64" alt="rss_logo"></a></div>
+           <div class="footer-item"><a href="https://github.com/DmitryKrushinsky"><img src="/images/GitHub-Mark-32px.png" alt="github_logo"></a></div>
+           <div class="footer-item"><span>2021</span></div>
+       </footer>
+    </div>
 </body>
 </html>
