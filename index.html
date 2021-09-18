@@ -8,25 +8,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>rsschool-cv</title>
+    <title>CV</title>
 </head>
 <body>
     <div class="wrapper">
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu__box"><li>
+                <a class="menu__item" href="#home">Home</a></li>
+                <li><a class="menu__item" href="#contacts">Contacts</a></li>
+                <li><a class="menu__item" href="#skills">Skills</a></li>
+                <li><a class="menu__item" href="#about">About me</a></li>
+                <li><a class="menu__item" href="#education">Education</a></li>
+                <li><a class="menu__item" href="#english">English</a></li>
+                <li><a class="menu__item" href="#code">Code examples</a></li>
+            </ul>
+        </div>
         <div class="main-content">
-            <aside class="aside container ">
+            <aside id="home" class="aside container ">
                 <div class="avatar-img">
                     <img class="avatar-image" src="images/avatar.jpg" alt="avatar-img">
                 </div>
                 <section class="aside__section contacts">                    
-                    <h3>Contacts</h3>
-                    <ul>
-                        <li><a href="tel:+375333462069"><img class="contact-icon" src="images/phone.svg" alt="phone">+375(33)346-20-69</a></li>
-                        <li><a href="mailto:dima.mysteri.98@gmail.com"><img class="contact-icon" src="images/email.svg" alt="email"> dima.mysteri.98@gmail.com</a></li>
-                        <li><a href="https://t.me/dmitrykrush"><img class="contact-icon" src="images/telegram.svg" alt="telegram"> @dmitrykrush</a></li>
+                    <h3 id="contacts">Contacts</h3>
+                    <ul class="contacts__list">
+                        <li><a class="contact-link" href="tel:+375333462069"><img class="contact-icon" src="images/phone.svg" alt="phone"><span>+375(33)346-20-69</span></a></li>
+                        <li><a class="contact-link" href="mailto:dima.mysteri.98@gmail.com"><img class="contact-icon" src="images/email.svg" alt="email"><span>dima.mysteri.98@gmail.com</span></a></li>
+                        <li><a class="contact-link" href="https://t.me/dmitrykrush"><img class="contact-icon" src="images/telegram.svg" alt="telegram"><span>@dmitrykrush</span></a></li>
                     </ul>                    
                 </section>
                 <section class="aside__section skills">
-                    <h3>Skills</h3>
+                    <h3 id="skills">Skills</h3>
                     <ul>
                         <li><b>Markup: </b>HTML5, Markdown</li>
                         <li><b>Styles: </b>CSS3, SCSS, SASS</li>
@@ -44,7 +59,7 @@
                         <h2>FRONT-END DEVELOPER</h2>
                     </header>
                     <section class="about">
-                        <h3>About me</h3>
+                        <h3 id="about">About me</h3>
                         <p>
                             Hello. My name is Dmitry, I am 23 years old, currently I work as a network engineer in an ISP. I've always been
                             interested in web development, thats why I'm here. My dream is to become a full-stack web developer using a bundle
@@ -52,19 +67,19 @@
                         </p>
                     </section>
                     <section class="education">
-                        <h3>Education</h3>
+                        <h3 id="education">Education</h3>
                         <p class="education__paragraph">
                             <span>Minsk, Belarusian State University of Informatics and Radioelectronics</span>
                             <span>Faculty of Computer Aided Design</span>
                             <span>Specialty: Electronics-Engineer-Programmer</span>
                         </p>
                     </section>
-                    <section class="english">
-                        <h3>English</h3>
+                    <section  class="english">
+                        <h3 id="english">English</h3>
                         <p>Estimated level: B1+</p>
                     </section>
                     <section class="code">
-                        <h3>Code examples</h3>
+                        <h3 id="code">Code examples</h3>
                         <h4>Python</h4>
                        <pre>
 def anagrams(word, words):
@@ -89,7 +104,8 @@ return res
                         <h4>JavaScript</h4>
                         <pre>
 function even_or_odd(number) {
-    let result = number % 2 == 0 ? "Even" : "Odd";
+    let result = number % 2 == 0 ? 
+        "Even" : "Odd";
     return result;
 }
                         </pre>
